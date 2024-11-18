@@ -1,4 +1,4 @@
-<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-19-Endogenous-Grid-Method.md">View as markdown</a>
+<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-18-Endogenous-Grid-Method.md">View as markdown</a>
 <a id="post-top"></a>
 # A deterministic growth model
 
