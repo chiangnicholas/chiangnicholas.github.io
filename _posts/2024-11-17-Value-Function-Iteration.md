@@ -8,11 +8,11 @@ V(W) = \max_{W' \in [0,W]} log(W-W') + \beta V(W'),
 ~\beta = 0.95, ~W \in [0.1,10]
 ```
 
-This problem has a closed form solution to the value function and policy function. 
+This problem has a [closed form solution](#analytical-solution) to the value function and policy function. 
 
 Here's a simple solution using discrete-state value function iteration in R:
 
-```
+```R
 #assign parameters
 beta <- 0.95
 
@@ -68,7 +68,7 @@ VFI gives the following results:
 
 ![image](https://github.com/user-attachments/assets/276e27ce-0d7e-4646-8bac-cb6184f7c899)
 
-# Analytical solution:
+# Analytical solution
 
 We conjecture that the solution to $V(W)$ takes the form $A + B log(W)$.
 ```math
