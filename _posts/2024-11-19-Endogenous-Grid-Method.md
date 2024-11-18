@@ -1,4 +1,4 @@
-<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-17-Value-Function-Iteration.md">View as markdown</a>
+<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-19-Endogenous-Grid-Method.md">View as markdown</a>
 <a id="post-top"></a>
 # A deterministic growth model
 
@@ -17,6 +17,15 @@ k_{ss} = \frac{\alpha \beta}{1/(1-\alpha)}
 since at the steady state, 
 ```math
 1 = \beta f'(k_{ss})
+```
+
+We also have the consumption Euler equation:
+```math
+c = \frac{c'}{\alpha\beta} k'^{1-\alpha}
+```
+and the budget constraint:
+```math
+k = (c + k')^{\frac{1}{\alpha}}
 ```
 
 Here's a simple solution in R:
@@ -52,6 +61,7 @@ cpgrid_1 <- cpgrid
 ```
 
 # Results
-VFI gives the following results:
+EGM gives the following results:
 
-![image](https://github.com/user-attachments/assets/276e27ce-0d7e-4646-8bac-cb6184f7c899)
+![image](https://github.com/user-attachments/assets/f31b57a0-9807-4c32-a034-7d14d4410a15)
+
