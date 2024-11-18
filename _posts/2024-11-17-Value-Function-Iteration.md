@@ -1,4 +1,4 @@
-<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-17--Value-Function-Iteration.md">View as markdown</a>
+<a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-17-Value-Function-Iteration.md">View as markdown</a>
 
 # A basic cake-eating problem
 
