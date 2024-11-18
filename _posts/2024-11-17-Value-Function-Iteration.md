@@ -31,7 +31,7 @@ wvec <- as.vector(seq(wlb, wub, by = inc))
 V <- wvec; 
 VNEW <- rep(0, N)
 
-# Define matrices to record current utility
+#Define matrices to record current utility
 wM <- matrix(wvec, nrow = N, ncol = N, byrow = TRUE)
 cM <- wM - wvec
 cM[cM == 0] <- .Machine$double.eps
@@ -39,7 +39,7 @@ UM <- matrix(0, nrow = N, ncol = N)
 UM[cM <= 0] <- -Inf
 UM[cM > 0] <- log(cM[cM > 0])
 
-# Beginning value function iteration
+#Beginning value function iteration
 Vtol <- 10
 epsilon <- 1e-6
 
@@ -58,7 +58,7 @@ while(Vtol > epsilon) {
 
 wp <- wvec[I] # Optimal w'
 
-# Define the true value function
+#Define the true value function
 a <- (log(1-beta) + (beta/(1-beta))* log(beta))/(1-beta)
 b <- 1 / (1 - beta)
 ```
