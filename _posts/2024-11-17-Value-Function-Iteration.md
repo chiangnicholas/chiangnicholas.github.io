@@ -67,3 +67,42 @@ b <- 1 / (1 - beta)
 VFI gives the following results:
 
 ![image](https://github.com/user-attachments/assets/276e27ce-0d7e-4646-8bac-cb6184f7c899)
+
+# Analytical solution:
+
+We conjecture that the solution to $V(W)$ takes the form $A + B log(W)$.
+```math
+V(W) = \max_{W' \in [0,W]} \{ {log(W-W')+\beta (A + B(log (W'))} \}
+```
+FOC for the maximisation problem is given by:
+```math
+\displaylines{\frac{-1}{W-W'}+ \frac{\beta B}{W'}=0 \\
+W' = \frac{\beta B}{1+ \beta B} W}
+```
+Substituting the optimal W' into V(W), we can drop the max operator:
+```math
+\displaylines{A + B log(W) &= log(W-\frac{\beta B}{1+ \beta B} W) + \beta(A + B log(\frac{\beta B W}{1 + \beta B})) \\
+        &= log(W(\frac{1+\beta B - \beta B}{1 + \beta B}) + \beta(A + B log(\frac{\beta B W}{1 + \beta B})) \\
+        &= log(\frac{W}{1+\beta B})+\beta(A+Blog(\frac{\beta B W}{1 +\beta B})) \\
+        &= (1 + \beta B) log(W) - log(1 + \beta B) + \beta A + \beta B log(\frac{\beta B}{1 + \beta B})}
+```
+By comparing coefficients, $B = 1 + \beta B$, and hence $B = \frac{1}{1-\beta}$. 
+
+Substituting B back into the FOC, we get the optimal consumption path:
+```math
+\displaylines{W' = \frac{\beta(\frac{1}{1-\beta})}{1+\beta \frac{1}{1-\beta}}W = \beta W \\
+        C = W - W' = (1-\beta) W}
+```
+    
+Substituting B back into the value function, we get:
+```math
+\displaylines{A + B log(W) &= (1 + \beta B) log(W) - log(1 + \beta \frac{1}{1-\beta}) + \beta A + \beta \frac{1}{1-\beta} log(\frac{\beta \frac{1}{1-\beta}}{1 + \beta \frac{1}{1-\beta}}) \\
+        & = B log(W) - log(\frac{1}{1-\beta}) + \beta A + \frac{\beta}{1-\beta}log(\beta)   }
+```
+    
+By comparing coefficients for A, we get:
+```math
+\displaylines{A - \beta A = - log(\frac{1}{1-\beta}) + \frac{\beta}{1-\beta}log(\beta) \\
+        A - \beta A = log(1-\beta) + \frac{\beta}{1-\beta}log(\beta) \\
+        A = \frac{log(1-\beta) + \frac{\beta}{1-\beta}log(\beta)}{1-\beta} }
+```
