@@ -4,8 +4,8 @@
 
 Consider a basic cake-eating problem of the following form:
 ```math
-V(W) = \max_{W' \in [0,W]} log(W-W') + \beta V(W'),
-~\beta = 0.95, ~W \in [0.1,10]
+\displaylines{V(W) = \max_{W' \in [0,W]} log(W-W') + \beta V(W'),\\
+\beta = 0.95, ~W \in [0.1,10]}
 ```
 
 This problem has a [closed form solution](#analytical-solution) to the value function and policy function. 
