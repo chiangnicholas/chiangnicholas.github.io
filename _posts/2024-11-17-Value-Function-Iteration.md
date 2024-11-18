@@ -1,5 +1,5 @@
 <a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-17-Value-Function-Iteration.md">View as markdown</a>
-
+<a id="post-top"></a>
 # A basic cake-eating problem
 
 Consider a basic cake-eating problem of the following form:
@@ -106,3 +106,5 @@ By comparing coefficients for A, we get:
         A - \beta A = log(1-\beta) + \frac{\beta}{1-\beta}log(\beta) \\
         A = \frac{log(1-\beta) + \frac{\beta}{1-\beta}log(\beta)}{1-\beta} }
 ```
+
+<p align="right">(<a href="#post-top">back to top</a>)</p>
