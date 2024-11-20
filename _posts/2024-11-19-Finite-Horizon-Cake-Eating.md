@@ -2,7 +2,7 @@
 <a id="post-top"></a>
 # A finite-horizon cake-eating problem
 
-Consider a **finite** cake-eating problem of the following form:
+Consider a **finite-horizon** cake-eating problem of the following form:
 ```math
 \displaylines{V(W) = \max_{W' \in [0,W]} log(W-W') + \beta V(W'),\\
 \beta = 0.95, ~W \in [0.1,10]}
