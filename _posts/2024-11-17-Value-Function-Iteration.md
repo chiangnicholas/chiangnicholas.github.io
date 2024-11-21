@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Value Function Iteration"
-tags: "Dynamic Programming
+tags: "Dynamic Programming"
 ---
 
 <a href="https://github.com/chiangnicholas/chiangnicholas.github.io/blob/main/_posts/2024-11-17-Value-Function-Iteration.md">View as markdown</a>
