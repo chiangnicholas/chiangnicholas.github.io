@@ -6,8 +6,6 @@ github_username: "chiangnicholas"
 
 theme: "minima"
 
-paginate: 2
-
 kramdown:
   syntax_highlighter_opts:
     disable: true
